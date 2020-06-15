@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="application.Flight" x="345" y="-138">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="application.Airport" x="112" y="366">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="application.ParserFlight" x="105" y="11">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="application.FlightList"
+            endpointName="flights" kind="Simple"/>
+    </Class>
+    <Class name="application.Systeme" x="30" y="150">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="application.Airport"
+            endpointName="airList" kind="Simple"/>
+        <Communication destinationClassName="application.Airport"/>
+        <Communication destinationClassName="application.ParserFlight"/>
+        <Communication destinationClassName="application.FlightList"/>
+    </Class>
+    <Class name="windows.WinController" x="553" y="178">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="application.Flight"
+            endpointName="flightFromSelectionne" kind="Simple">
+            <Point x="552" y="277"/>
+            <Point x="511" y="186"/>
+        </Association>
+        <Association destinationClassName="application.Flight"
+            endpointName="flightFrom" kind="Simple">
+            <Point x="664" y="-55"/>
+        </Association>
+        <Association destinationClassName="application.Flight"
+            endpointName="flightFromSelectionne1" kind="Simple">
+            <Point x="404" y="329"/>
+        </Association>
+        <Association destinationClassName="application.Flight"
+            endpointName="flightToSelectionne" kind="Simple">
+            <Point x="558" y="95"/>
+        </Association>
+        <Association destinationClassName="application.Flight"
+            endpointName="flightToSelectionne1" kind="Simple">
+            <Point x="615" y="48"/>
+        </Association>
+        <Association destinationClassName="application.Flight"
+            endpointName="flightTo" kind="Simple">
+            <Point x="522" y="144"/>
+        </Association>
+        <Communication destinationClassName="application.Airport"/>
+        <Communication destinationClassName="application.Systeme"/>
+    </Class>
+    <Class name="application.FlightList" x="117" y="-86">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="application.Flight"
+            endpointName="acList" kind="Simple"/>
+    </Class>
+</ClassDiagram>

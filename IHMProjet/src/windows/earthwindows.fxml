@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windows.WinController">
+   <children>
+      <Pane prefHeight="700.0" prefWidth="1100.0">
+         <children>
+            <ComboBox fx:id="paysdepart" layoutX="85.0" layoutY="40.0" prefWidth="120.0" promptText="pays" />
+            <ComboBox fx:id="villedepart" layoutX="85.0" layoutY="70.0" prefWidth="120.0" promptText="ville" />
+            <ComboBox fx:id="airportdepart" layoutX="85.0" layoutY="100.0" prefWidth="120.0" promptText="airport" />
+            <Pane fx:id="pane3D" layoutX="434.0" prefHeight="700.0" prefWidth="660.0" />
+            <Label layoutX="14.0" layoutY="15.0" text="From" />
+            <Label layoutX="223.0" layoutY="15.0" text="To" />
+            <ComboBox fx:id="paysarriver" layoutX="294.0" layoutY="40.0" prefWidth="120.0" promptText="pays" />
+            <ComboBox fx:id="villearriver" layoutX="294.0" layoutY="70.0" prefWidth="120.0" promptText="ville" />
+            <ComboBox fx:id="airportarriver" layoutX="294.0" layoutY="100.0" prefWidth="120.0" promptText="airport" />
+            <Label layoutX="14.0" layoutY="44.0" text="Pays ：" />
+            <Label layoutX="14.0" layoutY="74.0" text="Villes ：" />
+            <Label layoutX="14.0" layoutY="104.0" text="Aéroports :" />
+            <Label layoutX="223.0" layoutY="45.0" text="Pays ：" />
+            <Label layoutX="223.0" layoutY="74.0" text="Villes ：" />
+            <Label layoutX="223.0" layoutY="104.0" text="Aéroports :" />
+            <Button fx:id="myCheck" layoutX="14.0" layoutY="140.0" mnemonicParsing="false" text="Check" />
+            <ListView fx:id="myList" layoutX="14.0" layoutY="366.0" prefHeight="140.0" prefWidth="402.0" />
+            <ListView fx:id="myDepart" layoutX="14.0" layoutY="173.0" prefHeight="160.0" prefWidth="194.0" />
+            <ListView fx:id="myArriver" layoutX="220.0" layoutY="173.0" prefHeight="160.0" prefWidth="194.0" />
+            <Label layoutX="14.0" layoutY="515.0" text="Flight's information :" />
+            <Label layoutX="17.0" layoutY="343.0" text="Flights between two airports :" />
+            <TextArea fx:id="myArea" layoutX="14.0" layoutY="538.0" prefHeight="140.0" prefWidth="402.0" />
+            <Button fx:id="myShow" layoutX="180.0" layoutY="140.0" mnemonicParsing="false" text="Show All Airports" />
+            <Button fx:id="myClear" layoutX="302.0" layoutY="140.0" mnemonicParsing="false" text="Clear All Airports" />
+            <Button fx:id="myTrajet" layoutX="75.0" layoutY="140.0" mnemonicParsing="false" text="Trajet" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
